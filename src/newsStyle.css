@@ -1,0 +1,280 @@
+
+
+.milestones {
+    width: 100%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-bottom: 40px;
+    overflow: hidden
+}
+
+.milestones>svg {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1
+}
+
+.milestones__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto 81px
+}
+
+.milestones__item {
+    text-align: center;
+    position: relative;
+    min-width: 210px;
+    max-width: 210px;
+}
+
+.milestones__item>div {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column
+}
+
+.milestones__row:first-of-type .milestones__item>div {
+    justify-content: flex-end
+}
+
+.milestones__row:first-of-type .milestones__item::after {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #4f4874;
+    margin-top: 14px;
+    transition: all .5s ease
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(1) {
+    margin-top: 90px;
+    margin-left: 2px
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(2) {
+    margin-top: 58px
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(2) .milestones__text {
+    max-width: 210px;
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(3) {
+    margin-top: 90px
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(4) {
+    margin-top: 60px
+}
+
+.milestones__row:first-of-type .milestones__item:nth-of-type(5) {
+    margin-top: 88px;
+    margin-right: -3px
+}
+
+.milestones__row:last-of-type {
+    max-width: 936px
+}
+
+.milestones__row:last-of-type .milestones__item::before {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #4f4874;
+    margin-bottom: 14px
+}
+
+.milestones__row:last-of-type .milestones__item:nth-of-type(1) {
+    margin-top: -35px
+}
+
+.milestones__row:last-of-type .milestones__item:nth-of-type(2) {
+    margin-top: -5px
+}
+
+.milestones__row:last-of-type .milestones__item:nth-of-type(3) {
+    margin-top: -35px
+}
+
+.milestones__row:last-of-type .milestones__item:nth-of-type(4) {
+    margin-top: -4px;
+    margin-right: 4px
+}
+
+.milestones__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+    transition: all .5s ease
+}
+
+ .animate__item .milestones__title {
+    color: #fed501
+}
+
+.milestones__text {
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #8580a1
+}
+
+.is-animated .milestones__item.animate__item::after,
+.is-animated .milestones__item.animate__item::before {
+    background: #fed501;
+    box-shadow: 0 0 16px rgba(254, 213, 1, .9)
+}
+
+.milestones__item svg {
+    position: absolute;
+    margin-left: 0px;
+    left: 50%;
+    margin-left: -1px;
+    z-index: -1
+}
+
+.milestones__row:nth-of-type(2n+1) .milestones__item svg {
+    margin-top: 21px
+}
+
+.milestones__row:nth-of-type(2) .milestones__item svg {
+    top: -400px;
+    margin-left: 0
+}
+
+.milestones>svg.milestones__progress {
+    margin-left: -400px;
+    top: 177px
+}
+
+.milestones>svg.milestones__line_mobile,
+.milestones__row_mobile {
+    display: none
+}
+
+@media (max-width:767px) {
+    .milestones {
+        padding: 170px 15px 0
+    }
+
+    .milestones__item {
+        min-width: 130px;
+        max-width: 130px
+    }
+
+    .milestones>svg.milestones__line_mobile {
+        top: -150px;
+        transform: translateX(-51%);
+        margin-left: 0
+    }
+}
+
+@media (max-width:991px) {
+    .milestones {
+        position: relative;
+        padding: 250px 15px 0
+    }
+}
+
+@media (max-width:1169px) {
+    .milestones {
+        display: flex;
+        align-items: center;
+        margin-bottom: 49px;
+        position: relative;
+        padding: 250px 15px 0
+    }
+
+    .milestones__row .milestones__item {
+        margin-top: 0
+    }
+
+    .milestones__item>div {
+        min-height: unset
+    }
+
+    .milestones__row:first-of-type .milestones__item>div {
+        justify-content: unset
+    }
+
+    .milestones__row {
+        margin-bottom: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center
+    }
+
+    .milestones__item {
+        max-width: 210px;
+        margin-bottom: 40px
+    }
+
+    .milestones__row:first-of-type .milestones__item:nth-of-type(1),
+    .milestones__row:first-of-type .milestones__item:nth-of-type(2),
+    .milestones__row:first-of-type .milestones__item:nth-of-type(3),
+    .milestones__row:first-of-type .milestones__item:nth-of-type(4),
+    .milestones__row:first-of-type .milestones__item:nth-of-type(5),
+    .milestones__row:last-of-type .milestones__item:nth-of-type(1),
+    .milestones__row:last-of-type .milestones__item:nth-of-type(2),
+    .milestones__row:last-of-type .milestones__item:nth-of-type(3),
+    .milestones__row:last-of-type .milestones__item:nth-of-type(4) {
+        margin-top: 0;
+        margin-right: 0
+    }
+
+    .milestones__row:first-of-type .milestones__item::after {
+        display: none
+    }
+
+    .milestones__row:first-of-type .milestones__item::before {
+        display: inline-block;
+        content: '';
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        background: #4f4874;
+        margin-bottom: 14px
+    }
+
+    .is-animated .milestones__item.animate__item::before {
+        background: #fed501;
+        box-shadow: 0 0 16px rgba(254, 213, 1, .9)
+    }
+
+    .milestones__row:nth-of-type(2n+1) .milestones__item svg {
+        transform: rotate(180deg);
+        top: -420px;
+        margin-left: 0
+    }
+
+    .milestones>svg {
+        display: none
+    }
+
+    .milestones>svg.milestones__line_mobile {
+        display: block;
+        margin-left: 50%;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        z-index: -1
+    }
+}
+
+@media (max-width:1439px) {
+    .milestones::after {
+        display: none
+    }
+}

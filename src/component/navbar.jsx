@@ -31,8 +31,8 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="sign-btns">
-                <NavLink to="../login" className="navlink" > <button className="login-btn">Login</button></NavLink> 
-                <NavLink to="../signup" className="navlink" >   <button className="sign-btn">Sign Up</button> </NavLink>
+                <NavLink to="../dash" className="navlink" > <button className="login-btn">Login</button></NavLink> 
+                <NavLink to="../dash" className="navlink" >   <button className="sign-btn">Sign Up</button> </NavLink>
                 </div>
             </div>
             <div className="navbar navbar2" style={deco}>
@@ -48,8 +48,8 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="sign-btns">
-                <NavLink to="../login" className="navlink" onClick={open}> <button className="login-btn">Login</button></NavLink>  
-                <NavLink to="../signup" className="navlink" onClick={open}>   <button className="sign-btn">Sign Up</button> </NavLink>
+                <NavLink to="../dash" className="navlink" onClick={open}> <button className="login-btn">Login</button></NavLink>  
+                <NavLink to="../dash" className="navlink" onClick={open}>   <button className="sign-btn">Sign Up</button> </NavLink>
                 </div>
             </div>
             <div className='phone-nav'>

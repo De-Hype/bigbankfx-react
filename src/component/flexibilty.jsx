@@ -7,7 +7,7 @@ function Flexibilty() {
         <div className="flexibility">
             <div className="flexi-text">
                 <h1>Your Flexibility in Investment</h1>
-                <p>We also, want to create an app that didn't limit the user of what they want.
+                <p>We also, want to create an platform that didn't limit the user of what they want.
                      So here is our <br />main feature, some of this is like 
                 </p>
 

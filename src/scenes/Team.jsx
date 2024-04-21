@@ -32,7 +32,7 @@ const Team = () => {
             : colors.greenAccent[700]
          }
          borderRadius="4px"
-        cellClassName="histo-btn">
+        className="histo-btn">
         {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
         {access === "manager" && <SecurityOutlinedIcon/>}
         {access === "user" && <LockOpenOutlinedIcon/>}

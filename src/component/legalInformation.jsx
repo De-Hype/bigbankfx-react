@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 function LegalInformation() {
     
@@ -32,6 +33,7 @@ function LegalInformation() {
                 <li><img src="https://smartfinancefx.com/img/cert.jpg" alt="" width="100%" /></li>
             </ul>
         </div>
+        <Footer />
         </section>
     )
 }

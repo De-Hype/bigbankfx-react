@@ -28,7 +28,7 @@ function Homepage() {
         <WorldMap />
         <Milestone />
         <VideoPage />
-       
+       <Footer />
         
         </div>
     )

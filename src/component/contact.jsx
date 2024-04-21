@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 function Contact() {
 
@@ -35,6 +36,7 @@ function Contact() {
 
             <button>Send Message</button>
         </div>
+        <Footer />
         </section>
     )
 }

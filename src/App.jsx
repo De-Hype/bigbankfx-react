@@ -13,15 +13,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MainPage from "./mainPage";
 import Team from "./scenes/Team";
-//import Geography from "./scenes/geography";
-//import Invoices from "./scenes/invoices";
-//import Contacts from "./scenes/contacts";
-//import Bar from "./scenes/bar";
-//import Form from "./scenes/form";
 import Line from "./scenes/Line";
-//import Pie from "./scenes/pie";
-//import FAQ from "./scenes/faq";
-import Calendar from "./scenes/calendar";
+import Deposit from "./scenes/deposit/depositIndex";
 
 
 
@@ -42,8 +35,8 @@ function App() {
     <Route path="login" element={<Login  />} />
     <Route path="signup" element={<SignUp />} />
     <Route path="dash" element={<MainPage />} >
-        <Route path="team" element={<Team />} />
-        <Route path="line" element={<Line />} />
+        <Route path="history" element={<Team />} />
+        <Route path="deposit" element={<Deposit />} />
     </Route>
     
 

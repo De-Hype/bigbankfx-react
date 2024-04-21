@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 function AboutUs() {
 
@@ -20,6 +21,7 @@ function AboutUs() {
 
             <p>If you are looking for who to cooperate with better and safer, no one makes the trading business bigger, more powerful, and better than us. International credibility and recognition. SmartfinanceFX has placed respectability and business reputation at the forefront of its most important values.</p>
         </div>
+        <Footer />
         </section>
     )
 }

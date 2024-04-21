@@ -113,21 +113,17 @@ function SideBar() {
                     selected={selected}
                     setSelected={setSelected}
                     />
-                    <Typography
-                    variant="h6"
-                    color={colors.grey[300]}
-                    sx={{m: "15px 0 5px 20px"}}
-                    >Data</Typography>
+                   
                      <Item 
                     title="Transaction History"
-                    to="/dash/team"
+                    to="/dash/history"
                     icon={<PeopleOutlinedIcon/>}
                     selected={selected}
                     setSelected={setSelected}
                     />
                      <Item 
                     title="Deposit"
-                    to="/dash/line"
+                    to="/dash/deposit"
                     icon={<CalendarTodayOutlinedIcon/>}
                     selected={selected}
                     setSelected={setSelected}
@@ -139,11 +135,7 @@ function SideBar() {
                     selected={selected}
                     setSelected={setSelected}
                     />
-                     <Typography
-                    variant="h6"
-                    color={colors.grey[300]}
-                    sx={{m: "15px 0 5px 20px"}}
-                    >Pages</Typography>
+                 
                      <Item 
                     title="Log Out"
                     to="/form"

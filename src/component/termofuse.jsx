@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 function TermOfUse() {
 
@@ -99,6 +100,7 @@ contact us before at [email protected]
 
 
         </div>
+        <Footer />
         </section>
     )
 }

@@ -9,6 +9,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { NavLink } from "react-router-dom";
 
 function TopBar(prop) {
     const theme = useTheme();
@@ -24,31 +25,33 @@ function TopBar(prop) {
                 borderRadius="3px"
                 className="no-bg"
             >
-                <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" className="top-input"/>
+                <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" className="top-input" />
                 <IconButton type="button" sx={{ p: 1 }} className="top-input">
                     <SearchIcon />
                 </IconButton>
-                <MenuOutlinedIcon className="menu-icon" onClick={prop.openNav}/>
+                <MenuOutlinedIcon className="menu-icon" onClick={prop.openNav} />
 
             </Box>
 
 
             <Box display="flex" className="top-icon-box">
                 <IconButton onClick={colorMode.toggleColorMode}>
-                {theme.palette.mode === "dark" ? (
-                    <DarkModeOutlinedIcon  className="top-icons"/>
-                ): (
-                    <LightModeOutlinedIcon className="top-icons"/>
-                )}
+                    {theme.palette.mode === "dark" ? (
+                        <DarkModeOutlinedIcon className="top-icons" />
+                    ) : (
+                        <LightModeOutlinedIcon className="top-icons" />
+                    )}
+                </IconButton>
+                <NavLink to="/dash/notification">
+                    <IconButton>
+                        <NotificationsOutlinedIcon className="top-icons" />
+                    </IconButton>
+                </NavLink>
+                <IconButton>
+                    <SettingsOutlinedIcon className="top-icons" />
                 </IconButton>
                 <IconButton>
-                <NotificationsOutlinedIcon className="top-icons"/>
-                </IconButton>
-                <IconButton>
-                <SettingsOutlinedIcon  className="top-icons"/>
-                </IconButton>
-                <IconButton>
-               <PersonOutlinedIcon className="top-icons"/>
+                    <PersonOutlinedIcon className="top-icons" />
                 </IconButton>
             </Box>
         </Box>

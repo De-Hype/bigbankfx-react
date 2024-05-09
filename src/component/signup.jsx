@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-
+import { NavLink } from "react-router-dom";
 
 
 function SignUp(prop) {
@@ -50,7 +50,7 @@ function SignUp(prop) {
                     </div>
                 </div>
 
-                    <button>SIGN UP</button>
+                 <NavLink to="../dash" >  <button className="sign-btn2">SIGN UP</button></NavLink>   
 
             </form>
         </div>

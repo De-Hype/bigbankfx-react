@@ -130,7 +130,7 @@ function SideBar() {
                     />
                      <Item 
                     title="Withdrawal"
-                    to="/invoices"
+                    to="/dash/withdrawal"
                     icon={<ReceiptOutlinedIcon />}
                     selected={selected}
                     setSelected={setSelected}

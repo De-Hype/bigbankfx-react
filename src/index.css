@@ -105,6 +105,10 @@ body {
   line-height: 30px;
 }
 
+.sign-btn2 {
+  width: 100%;
+}
+
 .hero-left .bright-p span {
   color: gold;
 }

@@ -10,6 +10,8 @@ import Team from "./scenes/Team";
 import Deposit from "./scenes/deposit/depositIndex";
 import SidePhoneNav from "./dashcomponent/sidePhoneNav";
 import { useState } from "react";
+import Withdrawal from "./scenes/withdrawal/withdrawalIndex";
+import Notification from "./scenes/notifications/notificationIndex";
 
 
 function MainPage() {
@@ -41,9 +43,10 @@ function MainPage() {
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie/>} /> */}
               <Route path="/deposit" element={<Deposit />} />
+              <Route path="withdrawal" element={<Withdrawal />} />
               {/* <Route path="/faq" element={<DashBoard />} /> */}
               {/* <Route path="/geography" element={<Geography/>} /> */}
-              {/* <Route path="/calendar" element={<Calendar />} /> */}
+              <Route path="/notification" element={<Notification />} />
             </Routes>
         </main>
         </section>

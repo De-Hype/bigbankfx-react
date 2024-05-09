@@ -15,6 +15,8 @@ import MainPage from "./mainPage";
 import Team from "./scenes/Team";
 import Line from "./scenes/Line";
 import Deposit from "./scenes/deposit/depositIndex";
+import Withdrawal from "./scenes/withdrawal/withdrawalIndex";
+import Notification from "./scenes/notifications/notificationIndex";
 
 
 
@@ -37,6 +39,8 @@ function App() {
     <Route path="dash" element={<MainPage />} >
         <Route path="history" element={<Team />} />
         <Route path="deposit" element={<Deposit />} />
+        <Route path="withdrawal" element={<Withdrawal />} />
+        <Route path="notification" element={<Notification />} />
     </Route>
     
 

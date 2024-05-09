@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./navbar";
+import { NavLink } from "react-router-dom";
 
 
 function Login(prop) {
@@ -52,7 +53,7 @@ function Login(prop) {
                      <p>Remember me</p>
                     </div>
                     
-                    <button>Sign in now</button>
+                  <NavLink to="../dash"> <button>Sign in now</button> </NavLink> 
 
                     <h2>Lost your password?</h2>
 

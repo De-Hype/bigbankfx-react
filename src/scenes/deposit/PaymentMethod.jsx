@@ -1,6 +1,9 @@
 import Header from "../../dashcomponent/Header"
 import { useTheme } from "@mui/material";
 import { tokens } from "../../theme";
+import bronze from '../../../public/bronze.png'
+import silver from '../../../public/silver.png'
+import golder from '../../../public/golder.png'
 
 function PaymentMethod(props) {
     const theme = useTheme();
@@ -36,6 +39,27 @@ function PaymentMethod(props) {
         border: props.selectedMethod === "gold" ? "1px solid grey" : "none",
     }
 
+    const cardBox1 = {
+        background: `url(${bronze})`,
+        backgroundSize: "50px",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+    }
+
+    const cardBox2 = {
+        background: `url(${silver})`,
+        backgroundSize: "50px",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+    }
+
+    const cardBox3 = {
+        background: `url(${golder})`,
+        backgroundSize: "30px",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+    }
+
 
     return (
         <div className="payment-method">
@@ -56,8 +80,8 @@ function PaymentMethod(props) {
                     <div className="m-b-left" id="card" onClick={props.selectMethod}>
                         <p id="card" onClick={props.selectMethod}>Basic Plan</p>
                         <div className="card-container" id="card" onClick={props.selectMethod}>
-                            <div className="card-box" id="card" onClick={props.selectMethod}></div>
-                            <h4>10% profit on capital</h4>
+                            <div className="card-box" id="card" style={cardBox1} onClick={props.selectMethod}></div>
+                            <h4 onClick={props.selectMethod} id="card">10% profit on capital</h4>
                             
                         </div>
                     </div>
@@ -66,11 +90,11 @@ function PaymentMethod(props) {
                     </div>
                 </div>
                 <div className="method-box" onClick={props.selectMethod} style={crypto} id="crypto">
-                    <div className="m-b-left" id="crypto" Click={props.selectMethod}>
+                    <div className="m-b-left" id="crypto" onClick={props.selectMethod}>
                         <p id="crypto" Click={props.selectMethod}>Silver Plan</p>
-                        <div className="card-container" id="crypto" Click={props.selectMethod}>
-                            <div className="card-box" id="crypto" Click={props.selectMethod}></div>
-                            <h4>10% profit on capital</h4>
+                        <div className="card-container" id="crypto" onClick={props.selectMethod}>
+                            <div className="card-box" id="crypto" onClick={props.selectMethod} style={cardBox2}></div>
+                            <h4 onClick={props.selectMethod} id="crypto">15% profit on capital</h4>
                         </div>
                     </div>
                     <div className="m-b-right" id="crypto" Click={props.selectMethod}>
@@ -78,20 +102,21 @@ function PaymentMethod(props) {
                     </div>
                 </div>
                 <div className="method-box" onClick={props.selectMethod} style={gold} id="gold">
-                    <div className="m-b-left" id="gold" Click={props.selectMethod}>
-                        <p id="gold" Click={props.selectMethod}>Silver Plan</p>
-                        <div className="card-container" id="gold" Click={props.selectMethod}>
-                            <div className="card-box" id="gold" Click={props.selectMethod}></div>
-                            <h3>20% profit on capital</h3>
+                    <div className="m-b-left" id="gold" onClick={props.selectMethod}>
+                        <p id="gold" onClick={props.selectMethod}>Silver Plan</p>
+                        <div className="card-container" id="gold" onClick={props.selectMethod}>
+                            <div className="card-box" id="gold" onClick={props.selectMethod} style={cardBox3}></div>
+                            <h3 onClick={props.selectMethod} id="gold">20% profit on capital</h3>
                         </div>
                     </div>
                     <div className="m-b-right" id="gold" Click={props.selectMethod}>
-                        <img src="https://s3-eu-west-1.amazonaws.com/sage-cakehr/recruitment/group_informations/logos/000/000/835/original/paybis_logo.png?1619178850" id="crypto" Click={props.selectMethod} />
+                        <img src="https://s3-eu-west-1.amazonaws.com/sage-cakehr/recruitment/group_informations/logos/000/000/835/original/paybis_logo.png?1619178850" id="gold" Click={props.selectMethod} />
                     </div>
                 </div>
             </div>
             
         </div>
+        
     )
 }
 

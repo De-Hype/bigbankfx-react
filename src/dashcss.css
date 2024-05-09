@@ -312,6 +312,42 @@
     text-decoration: none;
 }
 
+.withdraw {
+    padding: 20px 30px;
+}
+
+
+.withdraw-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.withdraw-form {
+    width: 600px;
+    padding: 30px 30px;
+}
+
+.notification {
+    padding: 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

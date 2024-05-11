@@ -47,9 +47,7 @@ function TopBar(prop) {
                         <NotificationsOutlinedIcon className="top-icons" />
                     </IconButton>
                 </NavLink>
-                <IconButton>
-                    <SettingsOutlinedIcon className="top-icons" />
-                </IconButton>
+            
                 <IconButton>
                     <PersonOutlinedIcon className="top-icons" />
                 </IconButton>

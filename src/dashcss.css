@@ -334,6 +334,34 @@
     padding: 20px 20px;
 }
 
+.notify {
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notify h1 {
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.notify p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.notify input[type="checkbox"]{
+   width: 20px;
+   
+}
+
+.notification-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 
 
 

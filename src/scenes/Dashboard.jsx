@@ -8,6 +8,8 @@ import LineChart from "../dashcomponent/LineChart";
 function DashBoard() {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
+    const localStorageUser = localStorage.getItem("user");
+    const person = JSON.parse(localStorageUser)
 
     const accountDetails = [
         {
@@ -68,7 +70,7 @@ function DashBoard() {
             background: each.color,
         }
 
-        return <Box sx={{ backgroundColor: colors.primary[400] }} width="100%" padding="20px 15px" borderRadius="5px">
+        return <Box key={each.title} sx={{ backgroundColor: colors.primary[400] }} width="100%" padding="20px 15px" borderRadius="5px">
             <div className="investBox-top">
                 <p>{each.title}</p>
                 <div className="invest-icon" style={myStyle}><i className={each.icon}></i></div>
@@ -80,12 +82,12 @@ function DashBoard() {
         </Box>
     });
 
-    const showHistory = transactionHistory.map((each) => {
+    const showHistory = transactionHistory.map((each, index) => {
         const myStyle = {
             background: each.status === "success" ? colors.greenAccent[700] : "orangeRed",
 
         }
-        return <div className="history-box">
+        return <div className="history-box" key={index}>
             <Typography variant="h5" color={colors.greenAccent[400]} width="40%">{each.type}</Typography>
             <Typography width="40%">{each.date}</Typography>
             <button style={myStyle}>${each.amount}</button>
@@ -95,7 +97,7 @@ function DashBoard() {
     return (
         <Box m="20px">
             <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Header title="Hi, Joseph" subtitle="welcome to your dashboard" />
+                <Header title={`Hi, ${person.first_name}`} subtitle="welcome to your dashboard" />
             </Box>
             <div className="investment-amounts">
                 {showAccountDetails}

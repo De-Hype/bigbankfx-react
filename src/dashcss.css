@@ -104,6 +104,7 @@
 }
 
 .history-box button {
+    cursor: pointer;
     width: 15%;
     height: 20px;
     border: none;
@@ -261,6 +262,7 @@
       font-weight: 800;
       border: none;
       border-radius: 8px;
+      cursor: pointer;
 }
 
 .phone-side-nav {

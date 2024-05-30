@@ -18,10 +18,9 @@ import Deposit from "./scenes/deposit/depositIndex";
 import Withdrawal from "./scenes/withdrawal/withdrawalIndex";
 import Notification from "./scenes/notifications/notificationIndex";
 import { Toaster } from "sonner";
+import Success from "./component/Success";
 
 function App() {
-
-
   return (
     <section className="app">
       <Toaster
@@ -45,6 +44,7 @@ function App() {
         <Route path="term" element={<TermOfUse />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="payment-success" element={<Success />} />
         <Route path="dash" element={<MainPage />}>
           <Route path="history" element={<Team />} />
           <Route path="deposit" element={<Deposit />} />

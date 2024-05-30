@@ -20,7 +20,6 @@ function Login(prop) {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-
     if (loading) return;
 
     setLoading(true);
@@ -31,13 +30,14 @@ function Login(prop) {
         rememberMe: rememberMe,
       });
 
-      if (response.data.status == "ok") {
+      if (response?.data.status == "ok") {
         toast.success("User logged in successfully");
         localStorage.setItem("user", JSON.stringify(response.data.data));
         return navigate("/dash");
       }
     } catch (err) {
-      console.error(err);
+      if (err?.code == "ERR_NETWORK")
+        return toast.info("No internet connection.");
       setLoading(false);
       const { status } = err?.response;
       if (status == 400) return toast.error("Invalid Login details");

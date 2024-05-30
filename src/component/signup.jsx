@@ -38,6 +38,8 @@ function SignUp(prop) {
       
     } catch (err) {
       console.error(err);
+      if(err?.code == "ERR_NETWORK") return toast.info("No internet connection.");
+
       const { status } = err?.response;
       if (status == 401) return toast.error("Invalid Registration details");
       toast.error("Error occured while registering user");

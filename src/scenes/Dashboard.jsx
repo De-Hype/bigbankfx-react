@@ -15,21 +15,21 @@ function DashBoard() {
         {
             title: "My Investment Asset",
             icon: "bi-person-fill",
-            amount: "175,000",
+            amount: "0",
             rate: "120",
             color: "#873DCF"
         },
         {
             title: "Yearly Profit",
             icon: "bi-person-fill",
-            amount: "10,000",
+            amount: "0",
             rate: "40",
             color: "#286B91"
         },
         {
             title: "Profit Margin",
             icon: "bi-person-fill",
-            amount: "220,000",
+            amount: "0",
             rate: "300",
             color: "#1F6A5D"
         },

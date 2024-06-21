@@ -33,7 +33,7 @@ function SatisfiedCustomers() {
                 </div>
                 <div className="sat-box">
                     <h1>5M</h1>
-                    <p>Years of<br/> experince</p>
+                    <p>Customers invested</p>
                 </div>
             </div>
             <div className="satisfied-right">

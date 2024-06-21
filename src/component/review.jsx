@@ -2,19 +2,34 @@
 function Review() {
 
     const reviewPic = [
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-        "https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-05.jpg",
-        "https://img.freepik.com/free-photo/close-up-upset-american-black-person_23-2148749582.jpg",
+        {
+            imageUrl:
+            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+            text:"I have invested with BigbankFx for a long time now, and i will say that they are the very best.",
+            name:"Mary Jane"
+        },
+        {
+            imageUrl:
+            "https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-05.jpg",
+            text:"BigBankX is the best investment platform that i know of.",
+            name:"Lucy Jack"
+        },
+        {
+            imageUrl:
+            "https://img.freepik.com/free-photo/close-up-upset-american-black-person_23-2148749582.jpg",
+            text:"Investing with BigBankFX is just better you know, like literally they didnt want us to regret investing in them",
+            name:"Tom Samuel"
+        }
     ];
 
-    const showReview = reviewPic.map((eachReview) => {
+    const showReview = reviewPic.map((eachReview, index) => {
 
         const stylers = {
             background: `url(${eachReview})`,
             backgroundSize: `cover`,
             backgroundPosition: `center`,
         }
-        return <div className="user-review">
+        return <div key={index} className="user-review">
                     <div className="user-review-pic" style={stylers}>
                     </div>
                     <div className="review-star">
@@ -25,10 +40,9 @@ function Review() {
                         <i className="bi-star-fill"></i>
                     </div>
                     <div className="user-review-text">
-                        Investing with BigBankFX is just better you know, like literally
-                        they didnt want us to regret investing in them
+                        {eachReview.text}
                     </div>
-                    <div className="user-review-name">Mary Jane</div>
+                    <div className="user-review-name">{eachReview.name}</div>
                 </div>
     })
 

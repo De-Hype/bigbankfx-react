@@ -15,21 +15,21 @@ function DashBoard() {
         {
             title: "My Investment Asset",
             icon: "bi-person-fill",
-            amount: "0",
+            amount: "0.00",
             rate: "120",
             color: "#873DCF"
         },
         {
             title: "Yearly Profit",
             icon: "bi-person-fill",
-            amount: "0",
+            amount: "0.00",
             rate: "40",
             color: "#286B91"
         },
         {
             title: "Profit Margin",
             icon: "bi-person-fill",
-            amount: "0",
+            amount: "0.00",
             rate: "300",
             color: "#1F6A5D"
         },
@@ -105,7 +105,11 @@ function DashBoard() {
             <div className="charts" >
                 <Box sx={{ backgroundColor: colors.primary[400] }} width="40%" height="255px" borderRadius="5px" overflow="auto" className="histogo">
                     <Typography variant="h3" fontSize="19px" fontWeight="800" padding="9px 13px" >Recent Transactions</Typography>
-                    {showHistory}
+                    {/* {showHistory} */}
+                    <h3 style={{
+            marginTop:"1.2rem",
+            textAlign:"center"
+        }} className="">No Transaction History</h3>
                 </Box>
                 <Box 
                 backgroundColor={colors.primary[400]}
@@ -120,7 +124,7 @@ function DashBoard() {
                             Revenue Generated
                         </Typography>
                         <Typography variant="h3" fontWeight="500" color={colors.greenAccent[500]}>
-                            $44,000
+                            $0.00
                         </Typography>
                     </Box>
                     <Box>

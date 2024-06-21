@@ -103,7 +103,7 @@ function PaymentMethod(props) {
                 </div>
                 <div className="method-box" onClick={props.selectMethod} style={gold} id="gold">
                     <div className="m-b-left" id="gold" onClick={props.selectMethod}>
-                        <p id="gold" onClick={props.selectMethod}>Silver Plan</p>
+                        <p id="gold" onClick={props.selectMethod}>Gold Plan</p>
                         <div className="card-container" id="gold" onClick={props.selectMethod}>
                             <div className="card-box" id="gold" onClick={props.selectMethod} style={cardBox3}></div>
                             <h3 onClick={props.selectMethod} id="gold">20% profit on capital</h3>

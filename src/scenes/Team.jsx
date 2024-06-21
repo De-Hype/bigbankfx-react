@@ -48,7 +48,16 @@ const Team = () => {
  return (
     <Box m="20px">
         <Header title="TRANSACION HISTORY" subtitle="Managing the Team Members"/>
-        <Box
+        <h3
+          style={{
+            marginTop: "1.2rem",
+            textAlign: "center",
+          }}
+          className=""
+        >
+          No transaction history
+        </h3>
+        {/* <Box
         m="40px 0 0 0"
       sx={{
          "& .MuiDataGrid-root": {
@@ -77,7 +86,7 @@ const Team = () => {
              rows={mockDataTeam}
              columns={columns}
             />
-        </Box>
+        </Box> */}
     </Box>
  )
 }

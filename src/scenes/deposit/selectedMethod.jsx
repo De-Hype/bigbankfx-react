@@ -92,6 +92,7 @@ function SelectedMethod(prop) {
         </div>
         <p style={{
             marginTop:"1.2rem",
+            textAlign:"center"
         }} className="">
           Please make payment to this address, note this address was generated
           for this transaction only:
